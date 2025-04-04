@@ -1,5 +1,6 @@
 import React from 'react';
 import { AlertTriangle, CheckCircle, Info } from 'lucide-react';
+import HelpDesk from '../components/HelpDesk';
 
 const alerts = [
   {
@@ -51,6 +52,7 @@ export default function Alert() {
           </div>
         ))}
       </div>
+      <HelpDesk />
     </div>
   );
 }

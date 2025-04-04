@@ -28,14 +28,18 @@ export default function GreenAlert({ type, title, message }: GreenAlertProps) {
   };
   
   return (
-    <div className={`border-l-4 p-4 rounded-r-md mb-4 ${getStyles()}`}>
+    <div className={`border-l-4 p-3 sm:p-4 rounded-r-md mb-3 sm:mb-4 ${getStyles()}`}>
       <div className="flex justify-between items-start">
         <div>
-          <h3 className="font-medium">{title}</h3>
-          <p className="text-sm mt-1 opacity-80">{message}</p>
+          <h3 className="font-medium text-sm sm:text-base">{title}</h3>
+          <p className="text-xs sm:text-sm mt-1 opacity-80">{message}</p>
         </div>
-        <button onClick={() => setIsVisible(false)} className="text-gray-500 hover:text-gray-700">
-          <X className="h-5 w-5" />
+        <button 
+          onClick={() => setIsVisible(false)} 
+          className="text-gray-500 hover:text-gray-700"
+          aria-label="Close alert"
+        >
+          <X className="icon-sm" />
         </button>
       </div>
     </div>

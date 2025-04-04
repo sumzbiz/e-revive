@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, ShoppingBag, CreditCard } from 'lucide-react';
+import HelpDesk from '../components/HelpDesk';
 
 const products = [
   {
@@ -79,6 +80,7 @@ export default function Return() {
           </div>
         </div>
       </div>
+      <HelpDesk />
     </div>
   );
 }

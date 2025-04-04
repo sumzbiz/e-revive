@@ -1,5 +1,6 @@
 import React from 'react';
 import { Eye } from 'lucide-react';
+import HelpDesk from '../components/HelpDesk';
 
 const devices = [
   {
@@ -64,6 +65,7 @@ export default function DeviceStatus() {
           </div>
         ))}
       </div>
+      <HelpDesk />
     </div>
   );
 }
